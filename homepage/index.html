@@ -21,11 +21,11 @@
         <script src="../javascript/script.js"></script>    
         
     </head>
-    <body>
+    <body>                
         <button data-page="page1">About Us</button>
         <button data-page="page2">Services</button>
         <button data-page="page3">Resources</button>
-        <button data-page="page4">Contact Us</button>
+        <button data-page="page4">Contact Us</button>        
         
         <div id="page1">
             <h1>About Us</h1>
@@ -45,9 +45,9 @@
                 2. Our Mission: 
             </h3> 
             <ul>
-                <li>Deliver analytics solutions to our clients and customers on time, with passion and integrity.</li></p>
-                <li>Evangelize AI to the global community.</li></p>
-                <li>Use AI to the benefit of society.</li></p>
+                <li>Deliver analytics solutions to our clients and customers on time, with passion and integrity.</p></li>
+                <li>Evangelize AI to the global community.</p></li>
+                <li>Use AI to the benefit of society.</p></li>
             </ul>   
 
             <h3>3. Our Core Values:</h3>
@@ -107,10 +107,11 @@
             <footer>
                 <hgroup><h2>Professional Organizations:</h2></p>
                     Data & Analytics | <a href="https://www.informs.org">INFORMS</a> </p>
-                    Mining and Petroleum | <a href="https://www.smenet.org">SME</a>, <a href="https://www.cim.org">CIM</a> 
+                    Mining and Petroleum | <a href="https://www.smenet.org">SME</a>, 
+                    <a href="https://www.cim.org">CIM</a> 
                 </hgroup>      
             </footer>
-            
+
         </div>
 
         <div id="page4">
@@ -119,11 +120,16 @@
                 <address>
                     Email: <em> frank.yeboah@yeanalytics.com </em></br>                    
                 </address>
-                <!--add copyright-->
-                <p id="copyright">Copyright&copy; 2022, YAnalytics Inc. All rights reserved</p>
+
             </footer>
             
         </div>
-        
+        <footer>                
+            <!--add copyright-->
+            <p id="copyright">Copyright&copy; <span id="year"></span>, YAnalytics Inc. All rights reserved</p>
+        </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </body>
 </html>
