@@ -72,11 +72,59 @@ a:visited {
     font-family: sans-serif;
 }
 
-q, em { background: lawngreen;}
+q, em { 
+    background: lawngreen;
+}
 
 #copyright {
     font-size: small;
     font-style: italic;
     font-weight: bold;
     text-align: center;
+}
+
+#email {
+    background-color: whitesmoke; 
+    width: 30px;
+    height: 30px; 
+}
+
+/* Using DIV container class to align image and text*/
+.container {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+img {
+    max-width: 100%;
+}
+
+.image {
+    background-color: whitesmoke;
+    width: 30px;
+    height: 30px;
+    flex-basis: auto;
+    order: 0;
+}
+
+.text {
+    font-size: medium;
+    font-style: italic;    
+}
+
+/* for id=container*/
+#container {
+    display: flex;
+    align-items: center; 
+}
+
+#container img {
+    margin-right: 0px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;/* whitesmoke; black;*/
+    display: flex;
+    align-items: center;
 }
